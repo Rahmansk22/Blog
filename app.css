@@ -37,6 +37,7 @@
 .navbar .menu li {
     list-style: none;
     display: inline-block;
+   
 }
 
 .navbar .menu li a {
@@ -122,8 +123,8 @@ h1 {
 }
 .box{
     position: relative;
-    width: 200px;
-    height: 100px;
+    width: 400px;
+    height: 150px;
     background: #120cb9;
     border-radius: 50vh;
     min-height: 55vh;
@@ -214,7 +215,6 @@ h1 {
         color: #db18db;
     }
 
-    /* anchor tag decoration */
     a {
         text-decoration: none;
         color: #5673C8;
@@ -224,7 +224,6 @@ h1 {
         color: lightblue;
     }
 
-    /* paragraph tag decoration */
     p {
         display: -webkit-box;
         -webkit-box-orient: vertical;
@@ -248,38 +247,23 @@ h1 {
         width: 25%;
     }
     .skill-description {
-    color: black; /* Change color to your preference */
+    color: black; 
 }
-
-
     .row:after {
         content: "";
         display: table;
         clear: both;
     }
-
-    /* content decoration */
+  
     .content {
         background-color: white;
         padding: 10px;
         border: 1px solid gray;
     }
+  }
 
-    /* window size 850 width set */
-    @media screen and (max-width: 850px) {
-        .column {
-            width: 50%;
-        }
-    }
-
-    /* window size 400 width set */
-    @media screen and (max-width: 400px) {
-        .column {
-            width: 100%;
-        }
-    }
-}
-/* styles.css */
+    
+/* skills */
 .skills-bar-container {
     width: 100%;
     height: 100vh;
@@ -290,12 +274,13 @@ h1 {
     background-size: cover;
     background-position: center;
     color: #fff;
-    display: flex;
+    display: flex; 
     flex-direction: column;
-    justify-content: center; /* Center vertically */
-    align-items: center; /* Center horizontally */
+    justify-content: center; 
+    align-items: center;
 }
-/* Individual skill bar item */
+
+/*  skill bar */
 .skills-bar-container li {
     margin-bottom: 40px;
 }
@@ -303,11 +288,11 @@ h1 {
     margin-left: 40px;
     color: #db18db;
     text-align: left;
-    justify-content: left; /* Center vertically */
-    align-items: left; /* Center horizontally */
+    justify-content: left; 
+    align-items: left; 
 }
 
-/* Title and percentage container */
+/* Title and percentage */
 .progressbar-title {
     display: flex;
     justify-content: space-between;
@@ -321,12 +306,10 @@ h1 {
     margin: 0;
 }
 
-/* Percentage display */
 .percent {
     font-size: 20px;
 }
 
-/* Container for the progress bar */
 .bar-container {
     background: #f0f0f0;
     border-radius: 10px;
@@ -334,7 +317,6 @@ h1 {
     width: 500px; /* Adjust width as needed */
 }
 
-/* Progress bar */
 .progressbar {
     display: block;
     width: 50%;
@@ -417,7 +399,7 @@ h1 {
   #co-text {
     font-size: 40px;
     color: white;
-    padding-bottom: 2rem;
+    padding-bottom: 32px;
     
   }
   
@@ -434,17 +416,17 @@ h1 {
   
   .contact-form {
     font-family: 'Tahoma', sans-serif;
-    padding: 5rem;
+    padding: 80px;
   }
   
   #form-title {
     color: #fff;
-    font-size: 0.6rem;
+    font-size: 20px;
     text-transform: uppercase;
     letter-spacing: 1.2px;
     line-height: 1px;
-    margin-left: 4rem;
-    margin-bottom: 3rem;
+    margin-left: 64px;
+    margin-bottom: 48px;
   }
   
   fieldset {
@@ -453,9 +435,9 @@ h1 {
   
   .form-field {
     outline: none;
-    width: 100%;
+    width: 50%;
       border-bottom: 1px solid rgba(255, 255, 255, 0.09);
-      margin-bottom: .9rem;
+      margin-bottom: 15px;
   }
   
   #name, #email, #subject, #message {
@@ -465,13 +447,13 @@ h1 {
     background: transparent;
     border: none;
     letter-spacing: 2px;
-    font-size: .6rem;
-    line-height: 2rem;
-    padding-bottom: 0.7rem;
+    font-size: 15px;
+    line-height: 32px;
+    padding-bottom: 11px;
   }
   
   textarea, #message {
-    width: 100%;
+    width: 50%;
     color: #fff;
     overflow: visible;
   }
@@ -479,14 +461,14 @@ h1 {
   #form-btn {
     display: flex;
     justify-content: center;
-    margin-top: 3rem;
+    margin-top: 48px;
     border: none;
     color: white;
-    font-size: 0.6rem;
+    font-size: 10px;
     letter-spacing: 2.5px;
-    font-weight: 700;
+    font-weight: 500;
     text-transform: uppercase;
-    width: 200%;
+    width: 50px;
     height: 60px;
     background-color: #db18db;
     cursor: pointer;
@@ -504,13 +486,13 @@ h1 {
     flex-direction: column;
     align-items: flex-end;
     justify-content: center;
-    padding: 5rem;
+    padding: 80px;
     background-color: rgba(0,0,0,0.3);
   }
   
   .contact-info h3 {
     font-family: 'Tahoma', sans-serif;
-    font-size: 1rem;
+    font-size: 16px;
     color: white;
   }
   
@@ -518,30 +500,16 @@ h1 {
     font-family: 'Tahoma', sans-serif;
     text-decoration: none;
     color: #fa04ee;
-    font-size: 0.8rem;
+    font-size: 13px;
     letter-spacing: 2px;
-    line-height: 3rem;
-    margin-bottom: 5rem;
+    line-height: 30px;
+    margin-bottom: 80px;
     transition: all .3s ease;
   }
   
   .contact-info a:hover {
     transform: translateY(-2.5%);
     color: #04f108;
-  }
-  
-  .contact-info .fab {
-    font-size: 1.5rem;
-    line-height: 3rem;
-    padding-left: 2rem;
-    color: #0fdf3c;
-    cursor: pointer;
-    transition: all 1.3s ease-in;
-  }
-  
-  .fab:hover{
-    transform: scale(1.2ms);
-    color: #34ea0b;
   }
   
   
@@ -560,66 +528,90 @@ h1 {
     }
     
     #form-title {
-      margin: 3rem auto;
+      margin: 48px auto; 
     }
     
     .contact-header{
-      margin: 5rem 5rem 3rem 5rem;
+      margin: 80px 80px 48px 80px; 
     }
     
     #co-title {
-      font-size: 1rem;
+      font-size: 16px; 
     }
     
     #co-text {
-      font-size: 2.5rem;
+      font-size: 40px; 
     }
     
     .contact-form {
-      padding: 2.5rem;
+      padding: 40px; 
     }
-  }
-  
-  @media screen and (min-width: 960px) {
+}
+
+@media screen and (min-width: 960px) {
     .form-field {
-      width: 125%;
+      width: 150%; 
     }
     
     #form-title {
-      margin: 3rem auto;
+      margin: 48px auto; 
     }
     
     #form-btn {
-      width: 125%;
+      width: 150%; 
     }
     
     .contact-header{
-      margin: 7rem 7rem 3rem 7rem;
+      margin: 112px 112px 48px 112px; 
     }
     
     .contact-info {
-      padding: 5rem;
+      padding: 80px; 
     }
     
     #co-title {
-      font-size: 1rem;
+      font-size: 16px; 
     }
     
     #co-text {
-      font-size: 2.5rem;
+      font-size: 40px; 
     }
     
     .contact-form {
-      padding: 2.5rem;
+      padding: 30px;
     }
-  }
-  
-  @media screen and (min-width: 1460px) {
+}
+
+@media screen and (min-width: 1460px) {
     .form-field {
-      width: 200%;
+      width: 100%;
     }
     
     #form-btn {
-      width: 200%;
+      width: 100%;
     }
+}
+  .social {
+    padding-left: 20px;
+    padding-top: 10px;
+    margin: 5px;
+    border-radius: 6px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .fab{
+    margin: 0px;
+    padding-left: 8px;
+  }
+
+  .social a{
+    font-size: 30px;
+    color: #F4FFFE;
+    border-style: solid;
+    border-color: rgb(161, 9, 216);
+    padding: 10px;
+    margin: 5px;
+    border-radius: 6px;
+    display: inline-block
   }
